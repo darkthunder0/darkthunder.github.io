@@ -6,6 +6,105 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			/* 
+NO ACTION REQUIRED BY YOU
+
+Don't worry about this section.  These CSS styles are here to make the HTML document look cleaner, but are not part of the lesson.
+
+Just write your HTML however you want and these will automatically work.
+*/
+
+body {
+    background-color: #1D2326;
+    color: #BFA38A;
+    font-family: monospace;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  img {
+    border: 1px solid white;
+    border-radius: 5px;
+    max-width: 350px;
+    width: 100%;
+  }
+  
+  p {
+    color: #8097A6;
+  }
+  
+  .attribution {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    font-size: 0.8rem;
+    background-color: #8097A6;
+    padding: 10px;
+    border-radius: 5px;
+    color: #1D2326;
+    box-shadow: 1px 2px 5px 1px rgba(255,255,255, 0.2);
+  }
+  
+  a {
+    color: white;
+  }
+  
+  a:hover {
+    opacity: 0.8;
+  }
+  
+  .content {
+    width: 65%;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  
+  .content p {
+    max-width: 80%;
+  }
+  
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px dotted #BFA38A;
+    height: 85vh;
+  }
+  
+  button {
+    width: 200px;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 35px;
+    border: 1px solid #BFA38A;
+    background: transparent;
+    color: #BFA38A;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1)
+  }
+  
+  .reveal-btn {
+    border: none;
+    text-decoration: underline;
+    margin: 0;
+  }
+  
+  .reveal-btn:hover {
+    color: white;
+    background-color: transparent;
+  }
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -48,13 +147,55 @@
 							</article>
 
 						<!-- Work -->
-							<article id="work">
-								<h2 class="major">Work</h2>
-								<span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-								<p>Open source contributor</p><br></br>
-								<p>backend engineer(beginner maybe:>)</p>
-									
-							</article>
+							<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="mystyle.css">
+    <script src="myscripts.js"></script>
+</head>
+<body>
+    <main>
+        <section class="content">
+          <h2>Output</h2>
+          <div>
+            <h3>Programmer memes</h3>
+            <div id="meme-content" class="meme-content">
+              
+            </div>
+          </div>
+          <div>
+            <h3>Tell me something funny!</h3>
+            <div id="joke-content">
+              
+            </div>
+          </div>
+          <div>
+            <h3>Give me some wisdom...</h3>
+            <div id="quote-content" class="quote-content">
+              
+            </div>
+          </div>
+          <div>
+            <h3>I want a riddle!</h3> 
+            <div id="riddle-content" class="riddle-content">
+              
+            </div>
+          </div>
+        </section>
+        <section class="sidebar">
+          <h2>Actions</h2>
+          <button onclick="showMeme()">Show a Meme</button>
+          <button onclick="showJoke()">Tell Me a Joke</button>
+          <button onclick="showQuote()">Random Quote</button>
+          <button onclick="showRiddle()">Riddle me</button>
+          <button class="reveal-btn" onclick="revealAnswers()">Reveal Riddle Answer</button>
+          <p class="attribution">Code challenge by <a href="https://twitter.com/zg_dev" target="_top">@zg_dev</a></p>
+        </section>
+      </main></body>
+</html>
 
 						<!-- About -->
 							<article id="about">
@@ -355,6 +496,7 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+									<script src="myscripts.js"></script>
 
 	</body>
 </html>
